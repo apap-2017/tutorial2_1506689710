@@ -1,0 +1,18 @@
+Latihan Project Hello World:
+1. Tidak ada compile error. Ketika membuka http://localhost:8080/hello terjadi error dimana tidak ditemukan mapping yang dituju.
+2. Tidak ada compile error. Page http://localhost:8080/hello muncul seperti biasa.
+3. Tidak ada compile error. Ketika membuka http://localhost:8080/hello terjadi error dimana template dengan nama hello123 tidak ditemukan. String yang di return menandakan nama file dituju yang ada di template.
+
+Latihan Request Parameter:
+1. Ketika membuka localhost:??8080/hello/greeting?name=chanek tampilan muncul seperti biasa.
+2. 
+Ketika membuka http://localhost:8080/greeting terjadi error dimana String parameter "name" tidak ada.
+Ketika membuka http://localhost:8080/greeting hasilnya seperti biasa dimana nama yang tertera adalah null.
+3. Ketika membuka http://localhost:8080/greeting hasilnya seperti biasa dimana namanya adalah dunia, sehingga yang muncul adalah "Selamat datang dunia!"
+4. Karena "Sapaan untuk user" terevaluasi melalui atribut th:text. Sehingga hasil akhir yang muncul adalah value dari atribut th:text.
+
+Latihan Path Variable:
+1. Ketika membuka http://localhost:8080/greeting/ yang muncul adalah "Selamat datang dunia!"
+   Jika method greeting yang dibuat saat Latihan Request Parameter tetap ada maka akan muncul error ambigu. Karena terdapat dua method yang menghandle mapping "/greeting". Namun jika method greeting dihilangkan, akan muncul tulisa "Selamat datang dengklek!"
+   Ketika membuka http://localhost:8080/greeting/chanek akan muncul tulisan akan muncul tulisan "Selamat datang chanek!"
+   
